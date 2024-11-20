@@ -1,4 +1,4 @@
-# Google Cloud Storage API with Node.js and Express.js
+# MetaBucket - A Cloud Storage API
 
 ## Table of Contents
 
