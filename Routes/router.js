@@ -1,6 +1,6 @@
 const express = require('express');
 const multer = require('multer');
-const { uploadFile, getFiles, deleteFile, showDelPage, showUpPage } = require('../Controllers/controller.js');
+const { uploadFile, getFiles, deleteFile, showUpPage } = require('../Controllers/controller.js');
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
