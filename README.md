@@ -5,7 +5,7 @@
 * [Introduction](#introduction)
 * [Features](#features)
 * [Requirements](#requirements)
-* [NPM Packages/Dependencies](#npm_packages_dependencies)
+* [Dependencies](#dependencies)
 * [Setup](#setup)
 * [API Endpoints](#api-endpoints)
 * [MongoDB Schema](#mongodb-schema)
@@ -28,7 +28,7 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 * MongoDB
 * Google Cloud Storage
 
-## NPM Packages/Dependencies
+## Dependencies
 
 * @google-cloud-storage
 * express
@@ -43,9 +43,7 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 ## Setup
 
 1. Clone the repository
-2. ```javascript 
-npm install @google-cloud-storage express express-router dotenv axios ejs multer mongoose ejs
-    ```
+2. ```javascript npm install @google-cloud-storage express express-router dotenv axios ejs multer mongoose ejs```
 3. Add your Google Cloud Storage credentials to a `.env` file
 4. Add your MongoDB credentials to a `.json` file
 5. Run the application using `node index.js`
