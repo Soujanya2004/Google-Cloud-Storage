@@ -18,6 +18,12 @@ app.set('views', path.join(__dirname, 'Views'));
 
 app.use('/api/file', uploadRouter);
 
-app.listen(port, async () =>
-    console.log(`Server is running on http://localhost:${port}/api/file/upload`))
-    .on('error', (err) => console.error("Failed to start server:", err.message));
+app.listen(port, (err) => {
+    if (err) {
+        console.error(err);
+    } else {
+        console.log(`Server is running on port ${port}`);
+        console.log(`Upload - http://localhost:${port}/api/file/upload`);
+        console.log(`Get all files & delete files - http://localhost:${port}/api/file`);
+    }
+});
