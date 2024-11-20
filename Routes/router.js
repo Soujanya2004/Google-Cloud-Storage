@@ -11,10 +11,7 @@ router.route('/upload')
     .get(showUpPage)  
     .post(upload.single('file'), uploadFile);   
 
-
-router.route('/delete')
-    .get(showDelPage)   
-    .delete(deleteFile);   
+router.delete('/delete/:filename', deleteFile); 
 
 router.get('/', getFiles);
 
