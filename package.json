@@ -8,10 +8,11 @@
     },
     "author": "",
     "license": "ISC",
-    "description": "",
+    "description": "* [Introduction](#introduction)\r * [Features](#features)\r * [Requirements](#requirements)\r * [Dependencies](#dependencies)\r * [Setup](#setup)\r * [API Endpoints](#api-endpoints)\r * [MongoDB Schema](#mongodb-schema)\r * [Contributions](#contributions)",
     "dependencies": {
         "@google-cloud/storage": "^7.14.0",
         "axios": "^1.7.7",
+        "body-parser": "^1.20.3",
         "dotenv": "^16.4.5",
         "ejs": "^3.1.10",
         "express": "^4.21.1",

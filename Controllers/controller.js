@@ -1,8 +1,6 @@
 const { Storage } = require('@google-cloud/storage');
-const axios = require('axios');
 require('dotenv').config();
 const { fileModel } = require('../Models/model.js');
-const uri = process.env.PORT;
 const bktName = process.env.GCLOUD_BUCKET_NAME;
 
 const storage = new Storage({
@@ -16,7 +14,7 @@ const showUpPage = async function (req, res) {
     try {
         res.render('uploadfile');
     } catch(error) {
-        res.render('error', { message: error.message});
+        res.render('error', { message: error.message });
     }
 };
 
