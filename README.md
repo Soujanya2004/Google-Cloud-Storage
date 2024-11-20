@@ -61,9 +61,16 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 * Method: GET
 
 
-# Contributions
+# Contributions(soujanya)
 
-* Designed database schema
+* Designed database of the project
 * API Development: Created RESTful API endpoints for upload and view files
 * Added delete functionality to the files uploaded both in cloud and database
 * UI Integration: Added UI for each templates rendered
+
+# Contributions (jay)
+
+* Added EJS functionality for dynamic page rendering
+* Added Axios functionality for api requests
+* Modified and fixed the functionality to upload files into Google Cloud Storage bucket
+* Modified the 'uploadfile.ejs', 'getfiles.ejs', and 'uploaded.ejs' files to add functionality for navigating between them
