@@ -9,6 +9,7 @@
 * [Setup](#setup)
 * [API Endpoints](#api-endpoints)
 * [MongoDB Schema](#mongodb-schema)
+* [Contributions](#contributions)
 
 ## Introduction
 
@@ -80,3 +81,10 @@ const fileSchema = new mongoose.Schema({
 
 const fileModel = mongoose.model('File', fileSchema);
 ```
+
+# Contributions
+
+* Added EJS functionality for dynamic page rendering
+* Added Axios functionality for api requests
+* Modified and fixed the functionality to upload files into Google Cloud Storage bucket
+* Modified the 'uploadfile.ejs', 'getfiles.ejs', and 'uploaded.ejs' files to add functionality for navigating between them
