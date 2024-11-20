@@ -1,9 +1,9 @@
 const { Storage } = require('@google-cloud/storage');
-const path = require('path');
+const axios = require('axios');
 require('dotenv').config();
-const { File, fileModel } = require('../Models/model.js');
-
-const bktName = process.env.GCLOUD_BUCKET_NAME || 'test-bucket343';
+const { fileModel } = require('../Models/model.js');
+const uri = process.env.PORT;
+const bktName = process.env.GCLOUD_BUCKET_NAME;
 
 const storage = new Storage({
     keyFilename: process.env.GCLOUD_KEYFILE_PATH,
@@ -15,14 +15,6 @@ const bucket = storage.bucket(bktName);
 const showUpPage = async function (req, res) {
     try {
         res.render('uploadfile');
-    } catch(error) {
-        res.render('error', { message: error.message});
-    }
-};
-
-const showDelPage = async function (req, res) {
-    try {
-        res.render('deletefile');
     } catch(error) {
         res.render('error', { message: error.message});
     }
@@ -85,7 +77,7 @@ const getFiles = async function (req, res) {
 
 const deleteFile = async (req, res) => {
     try {
-        const { fileName } = req.query; // Get the file name from the query string
+        const { fileName } = req.params; // Get the file name from the query string
 
         if (!fileName) {
             return res.status(400).json({ message: "No file name provided" });
@@ -105,11 +97,11 @@ const deleteFile = async (req, res) => {
 
         // Return a success response
         res.status(200).json({ message: `File ${fileName} deleted successfully.` });
-    } catch (err) {
+        } catch (err) {
         console.error('Error deleting file:', err);
         res.status(500).json({ message: `Error deleting file: ${err.message}` });
     }
 };
 
 
-module.exports = { showUpPage, showDelPage, uploadFile, getFiles, deleteFile };
+module.exports = { showUpPage, uploadFile, getFiles, deleteFile };
