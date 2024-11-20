@@ -2,4 +2,3 @@
 node_modules/
 .env
 golden-cove.json
-package-lock.json
