@@ -1,4 +1,4 @@
-# MetaBucket - A Cloud Storage API
+# MetaBucket - A Google Cloud Storage API
 
 ## Table of Contents
 
