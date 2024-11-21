@@ -56,7 +56,7 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 * URL: `/api/file/upload`
 * Method: `POST`
 
-### Get All Files
+### Get All Files (& Delete)
 
 * URL: `/api/file`
 * Method: `GET`
