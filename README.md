@@ -82,7 +82,7 @@ const fileSchema = new mongoose.Schema({
 
 const fileModel = mongoose.model('File', fileSchema);
 ```
-#Screenshots
+# Screenshots
 
 ## Upload Files Page
 ![Upload Files Page](./Screenshots/uploadFile.png)
