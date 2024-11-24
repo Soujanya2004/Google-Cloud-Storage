@@ -75,26 +75,26 @@ const getFiles = async function (req, res) {
 
 const deleteFile = async (req, res) => {
     try {
-        const { fileName } = req.params; // Get the file name from the query string
+        const { filename } = req.params; // Get the file name from the query string
 
-        if (!fileName) {
+        if (!filename) {
             return res.status(400).json({ message: "No file name provided" });
         }
 
         // Delete the file from Google Cloud Storage
-        const file = bucket.file(fileName);
+        const file = bucket.file(filename);
         await file.delete();
-        console.log(`Deleted file from Google Cloud Storage: ${fileName}`);
+        console.log(`Deleted file from Google Cloud Storage: ${filename}`);
 
         // Delete the file record from MongoDB
-        const deleteResult = await fileModel.deleteOne({ name: fileName });
+        const deleteResult = await fileModel.deleteOne({ name: filename });
         if (deleteResult.deletedCount === 0) {
-            return res.status(404).json({ message: `File record not found in MongoDB: ${fileName}` });
+            return res.status(404).json({ message: `File record not found in MongoDB: ${filename}` });
         }
-        console.log(`Deleted file record from MongoDB: ${fileName}`);
+        console.log(`Deleted file record from MongoDB: ${filename}`);
 
         // Return a success response
-        res.status(200).json({ message: `File ${fileName} deleted successfully.` });
+        res.status(200).json({ message: `File ${filename} deleted successfully.` });
         } catch (err) {
         console.error('Error deleting file:', err);
         res.status(500).json({ message: `Error deleting file: ${err.message}` });

@@ -4,7 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GCS Web App</title>
-    <link rel="stylesheet" href="uploadfile.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input[type="file"] {
+            border: 2px dashed #d1d9e6;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.9em;
+            cursor: pointer;
+            transition: border-color 0.3s;
+        }
+
+        input[type="file"]:hover {
+            border-color: #4a90e2;
+        }
+
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button[type="submit"] {
+            background-color: #4a90e2;
+            color: #fff;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #357abd;
+        }
+
+        button[type="reset"] {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #e0e0e0;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
