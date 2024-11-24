@@ -9,6 +9,7 @@
 * [Setup](#setup)
 * [API Endpoints](#api-endpoints)
 * [MongoDB Schema](#mongodb-schema)
+* [Screenshots](#screenshots)
 * [Contributions](#contributions)
 
 ## Introduction
@@ -81,6 +82,28 @@ const fileSchema = new mongoose.Schema({
 
 const fileModel = mongoose.model('File', fileSchema);
 ```
+#Screenshots
+
+## Upload Files Page
+![Upload Files Page](./Screenshots/uploadFile.png)
+
+## Uploaded Page
+![Uploaded Page](./Screenshots/uploaded.png)
+
+## A Sample File in the Bucket
+![Sample file](./Screenshots/Sample.png)
+
+## All Files Page
+![All Files Page](./Screenshots/AllFiles.png)
+
+## Delete File Page
+![Delete Files Page](./Screenshots/DeleteFile.png)
+
+## Deleted File Alert
+![Delete File Alert](./Screenshots/DeleteFileAfter.png)
+
+## Console Log
+![Console Log](./Screenshots/console.png)
 
 # Contributions
 
