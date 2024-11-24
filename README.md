@@ -97,10 +97,10 @@ const fileModel = mongoose.model('File', fileSchema);
 ![All Files Page](./Screenshots/AllFiles.png)
 
 ## Delete File Page
-![Delete Files Page](./Screenshots/DeleteFile.png)
+![Delete Files Page](./Screenshots/DeleteFileAfter.png)
 
 ## Deleted File Alert
-![Delete File Alert](./Screenshots/DeleteFileAfter.png)
+![Delete File Alert](./Screenshots/DeleteFile.png)
 
 ## Console Log
 ![Console Log](./Screenshots/console.png)
