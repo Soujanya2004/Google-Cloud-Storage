@@ -76,9 +76,7 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 * Modified the 'uploadfile.ejs', 'getfiles.ejs', and 'uploaded.ejs' files to add functionality for navigating between them
 
 ## Screenshots
-![Screenshot](https://raw.githubusercontent.com/Soujanya2004/Google-Cloud-Storage/main/Screenshot%20(304).png "Screenshot Example")
-![Screenshot of Feature](https://raw.githubusercontent.com/Soujanya2004/Google-Cloud-Storage/main/Screenshot%20(305).png "Screenshot Example")
-![Screenshot](https://raw.githubusercontent.com/Soujanya2004/Google-Cloud-Storage/main/Screenshot%20(306).png "Screenshot Example")
+
 
 
 
