@@ -60,7 +60,6 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 * URL: /api/file
 * Method: GET
 
-
 # Contributions(soujanya)
 
 * Designed database of the project
@@ -74,3 +73,5 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 * Added Axios functionality for api requests
 * Modified and fixed the functionality to upload files into Google Cloud Storage bucket
 * Modified the 'uploadfile.ejs', 'getfiles.ejs', and 'uploaded.ejs' files to add functionality for navigating between them
+  
+![Screenshot](https://raw.githubusercontent.com/Soujanya2004/Google-Cloud-Storage/main/Screenshot%20(304).png "Screenshot Example")
