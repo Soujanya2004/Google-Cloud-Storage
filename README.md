@@ -77,6 +77,16 @@ This project performs CRUD operations using Node.js and Express.js in Google Clo
 
 ## Screenshots
 
+### Detailed File View
+![File Upload Progress Screenshot](https://raw.githubusercontent.com/Soujanya2004/Google-Cloud-Storage/main/Screenshot%20(307).png "File Upload Progress Example")
+
+### File Upload Progress
+![Detailed File View Screenshot](https://raw.githubusercontent.com/Soujanya2004/Google-Cloud-Storage/main/Screenshot%20(308).png "Detailed File View Example")
+
+### Final Confirmation Page
+![Final Confirmation Page Screenshot](https://raw.githubusercontent.com/Soujanya2004/Google-Cloud-Storage/main/Screenshot%20(309).png "Final Confirmation Example")
+
+
 
 
 
