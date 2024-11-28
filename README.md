@@ -8,7 +8,7 @@
 * [Dependencies](#dependencies)
 * [Setup](#setup)
 * [API Endpoints](#api-endpoints)
-* [Contributions](#contributions)
+* [Contributions](#Contributions)
 * [Screenshots](#Screenshots)
 
 ## Introduction
